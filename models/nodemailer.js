@@ -31,4 +31,3 @@ transporter.sendMail(mailOptions, function(error, info){
         console.log(`Email sent successfully + ${(info.response)}`);
     }
 });
-

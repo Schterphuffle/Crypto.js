@@ -24,4 +24,3 @@ Built out Authentication piece for the MoneyTok App.
 * create a .env file (directions on how to create .env are in the models folder nodemailer.js file)
 * add gmail credentials to the .env
 * call gmail credentials in .env in nodemailer.js file within models folder
-
