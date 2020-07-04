@@ -9,7 +9,7 @@ app.use(session({
         return genuuid()
     },
     //Set secret in .env file
-    secret: SECRET,
+    secret: process.env.EXPRESS_SESSION_SECRET,
     resave: false,
     saveUninitialized: true,
     //recommended to set secure: true, this requires https enabled website

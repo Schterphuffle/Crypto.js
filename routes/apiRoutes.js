@@ -12,4 +12,12 @@ app.get('/', function(req, res, next) {
         req.session.views = 1
         res.end(`Login again`)
     }
+});
+
+app.get('/login', (req, res) => {
+    res.render('./index.html')
+})
+
+app.get('/register', (req, res) => {
+    res.render('./index.html')
 })

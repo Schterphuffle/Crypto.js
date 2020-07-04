@@ -1,11 +1,6 @@
   
 const express = require("express");
-const axios = require("axios");
-const sequelize = require("sequelize");
-const path =require("path");
-const routes = require("./routes")(app);
-
-
+const routes = require("./routes/apiRoutes");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
