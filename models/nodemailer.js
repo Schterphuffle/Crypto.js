@@ -5,6 +5,7 @@ require ('dotenv').config();
 const nodemailer = requie("nodemailer");
 
 //How to do this: https://nodemailer.com/usage/using-gmail/ , https://blog.mailtrap.io/nodemailer-gmail/
+//Enable Less Secure apps on your gmail account to use nodemailer with gmail https://support.google.com/accounts/answer/6010255?hl=en
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
