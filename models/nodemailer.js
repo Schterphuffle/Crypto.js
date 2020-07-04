@@ -4,18 +4,6 @@ require ('dotenv').config();
 //Require Nodemailer 
 const nodemailer = requie("nodemailer");
 
-// INIT
-var myString = "blablabla Card game bla";
-var myPassword = "myPassword";
-
-// PROCESS
-var encrypted = CryptoJS.AES.encrypt(myString, myPassword);
-var decrypted = CryptoJS.AES.decrypt(encrypted, myPassword);
-document.getElementById("demo0").innerHTML = myString;
-document.getElementById("demo1").innerHTML = encrypted;
-document.getElementById("demo2").innerHTML = decrypted;
-document.getElementById("demo3").innerHTML = decrypted.toString(CryptoJS.enc.Utf8);
-
 //How to do this: https://nodemailer.com/usage/using-gmail/ , https://blog.mailtrap.io/nodemailer-gmail/
 const transporter = nodemailer.createTransport({
     service: 'gmail',
